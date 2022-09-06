@@ -47,3 +47,12 @@ const userInputElement = document.getElementById("input-element");
 if (userInputElement) {
   (userInputElement as HTMLInputElement).value = 'こんにちは';
 }
+
+interface ErrorContainer { // { email: '正しいメールアドレスではありません。', username: 'ユーザ名に記号を含めることはできません。'}
+  [prop: string]: string;
+}
+
+const errorBag: ErrorContainer = {
+  email: '正しいメールアドレスではありません。',
+  username: 'ユーザ名に記号を含めることはできません。'
+}
