@@ -22,3 +22,9 @@ class Person {
 let user1;
 user1 = new Person();
 user1.greet('Hello I am');
+// const userInputElement = <HTMLInputElement>document.getElementById("input-element")!;
+// const userInputElement = document.getElementById("input-element")! as HTMLInputElement;
+const userInputElement = document.getElementById("input-element");
+if (userInputElement) {
+    userInputElement.value = 'こんにちは';
+}
